@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>ThaiCreate.Com jQuery Tutorials</title>
+<style>
+  div { background:#3d9a44; margin:3px; width:80px; 
+    height:40px; float:left; }
+</style>
+<script type="text/javascript" src="jquery-1.6.4.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+
+			  $(document.body).click(function () {
+				if ($("div:first").is(":hidden")) {
+				  $("div").show("slow");
+				} else {
+				  $("div").slideUp();
+				}
+			  });
+
+		});
+</script>
+</head>
+<body>
+
+  Click me!
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+
+</body>
+</html>
